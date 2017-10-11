@@ -1,0 +1,270 @@
+html, body {
+  background-image: url("./img/general/bg-wood.png");
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  padding: 10px;
+  font-family: arial;
+}
+
+#header {
+  position: relative;
+  margin: 0 70px;
+}
+
+#searchBox {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#searchInput, input[type="text"] {
+  background-color: rgb(235, 200, 150);
+  width: 200px;
+}
+
+#searchButton {
+  background-color: green;
+  color: white;
+}
+
+#navbar {
+  margin: 0 70px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(135, 80, 29);
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(125, 98, 63);
+}
+
+li a:active {
+  background-color: green;
+}
+
+#content {
+  margin: 0 70px 150px 70px;
+}
+
+footer {
+  //position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: rgb(135, 80, 29);
+  margin-left: -20px;
+  margin-bottom: -20px;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+  font-family: serif;
+}
+
+footer img {
+  width: 40px;
+}
+
+a img {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#address {
+  position: absolute;
+  left: 50px;
+}
+
+#contactInformation {
+  position: absolute;
+  left: 250px;
+}
+
+#socialMedia {
+  position: absolute;
+  left: 500px;
+}
+
+
+
+  /*
+  * products page
+  */
+.container{
+  width: 962px;
+  max-width: 90%;
+  margin: 20px auto !important; /* TODO: Remove !important*/
+  box-sizing: border-box;
+}
+.container--color{
+  background: rgb(135, 80, 29);
+  padding: 20px;
+  color: #fff;
+}
+.container--bg img{
+  width: 100%;
+  height: auto;
+}
+.grid{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.grid__column{
+  width: 33%;
+  width: calc((100% / 3) - 15px);
+}
+.grid__element{
+  margin-bottom: 20px;
+}
+.double{
+  font-size: 0;
+}
+.double__one{
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.double__one--right{
+  text-align: right;
+}
+.button{
+  background: #386b00;
+  color: #fff;
+  display: inline-block;
+  border: 2px solid #386b00;
+  padding: 6px 10px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+}
+.button:hover, .button:focus{
+  color: #386b00;
+  background: #fff;
+}
+.products{
+  background: #925b1f;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.products__image{
+  width: 100%;
+  height: auto;
+}
+.products__extra{
+  max-height: 0;
+  overflow-y: hidden;
+  transition: .2s ease-in-out all;
+}
+.products:hover .products__extra{
+  max-height: 200px;
+}
+
+/*
+ * Product page
+ */
+.sidebarcontent{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.sidebarcontent__main{
+  width: 70%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.sidebarcontent__sidebar{
+  width: 30%;
+}
+.sidebarcontent__sidebar img{
+  max-width: 100%;
+  height: auto;
+}
+.form{
+
+}
+.form__header{
+  font-size: 24px;
+  font-weight: 600;
+}
+.form__group{
+  font-size: 0;
+  margin-bottom: 10px;
+}
+.form__group--right{
+  text-align: right;
+}
+.form__group label{
+  font-size: 18px;
+  width: 50%;
+  display: inline-block;
+}
+.form__group select{
+  width: 50%;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0;
+  background: #d3d2d3;
+  border: 1px solid #aeaeae;
+}
+
+/*
+ * Order page
+ */
+.table{
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
+}
+.table td,
+.table th{
+  border: 1px solid #f8aa6a;
+  color: #fff;
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 10px;
+}
+.table img{
+  max-width: 90px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+.table td:nth-child(2){
+  font-size: 22px;
+}
+.table td:nth-child(n + 4){
+  text-align: center;
+}
+.table tfoot td:last-child{
+  text-align: center;
+}
+.table tfoot td:nth-child(2){
+  font-size: 18px;
+}
+.table .table__invisible{
+  border: none;
+}
