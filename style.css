@@ -34,11 +34,6 @@ body{
   width: 200px;
 }
 
-#searchButton {
-  background-color: green;
-  color: white;
-}
-
 #navbar {
   margin: 0 70px;
 }
@@ -76,7 +71,7 @@ li a:active {
 footer {
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 150px;
   background: rgb(135, 80, 29);
   margin-bottom: -20px;
   color: white;
