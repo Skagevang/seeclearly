@@ -343,3 +343,19 @@ Checkout page
 #checkout td:empty {
   border: 0;
 }
+
+#left-div {
+  float: left;
+  margin-right: 100px;
+}
+
+#payment {
+  float: right;
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  background-color: green;
+  /*ENDRE JAVASCRIPT FILEN FOR DETTE!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+}
