@@ -279,6 +279,8 @@ FAQ page
 .content-FIX-THIS-SHIT {
   max-width: 962px;
   margin: 20px auto !important;
+  width: 90%;
+
 /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH*/
 }
 
@@ -290,7 +292,7 @@ FAQ page
   color: white;
   background-color: rgb(135, 80, 29);
   max-width: 800px;
-  padding: 6px;
+  padding: 6px 12px;
   margin: 0px auto;
   margin-top: 10px;
   font-size: 16px;
@@ -321,4 +323,23 @@ FAQ page
 
 arrow {
   float: right;
+}
+
+/*
+Checkout page 
+*/
+#checkout {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#checkout td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+#checkout td:empty {
+  border: 0;
 }
