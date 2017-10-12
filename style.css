@@ -289,12 +289,12 @@ FAQ page
   border-style: none;
   color: white;
   background-color: rgb(135, 80, 29);
-  text-align: center;
   max-width: 800px;
   padding: 6px;
   margin: 0px auto;
   margin-top: 10px;
   font-size: 16px;
+  text-align: left;
 }
 .FAQ-button:hover {
   cursor: pointer;
@@ -317,4 +317,8 @@ FAQ page
 #question {
   padding: 0px;
   margin: 0px;
+}
+
+arrow {
+  float: right;
 }
