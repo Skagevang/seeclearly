@@ -282,7 +282,7 @@ FAQ page
 /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH*/
 }
 
-.FAQ-button {
+.faq-button {
   display: block;
   max-width: 600px;
   width: 100%;
@@ -296,12 +296,12 @@ FAQ page
   font-size: 16px;
   text-align: left;
 }
-.FAQ-button:hover {
+.faq-button:hover {
   cursor: pointer;
   background-color: rgb(125, 98, 63);
 }
 
-.FAQ-button:focus {
+.faq-button:focus {
   outline: 0;
 }
 
