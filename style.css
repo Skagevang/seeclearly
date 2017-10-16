@@ -179,10 +179,10 @@ a img {
 .products__extra{
   max-height: 0;
   overflow-y: hidden;
-  transition: .2s ease-in-out all;
+  transition: .4s ease-in-out all;
 }
 .products:hover .products__extra{
-  max-height: 200px;
+  max-height: 250px;
 }
 
 /*
@@ -270,6 +270,7 @@ a img {
 .table .table__invisible{
   border: none;
 }
+
 /*
  * About Pages
  */
@@ -316,4 +317,70 @@ a img {
 
 
 
+
+
+.orderform{
+  margin-top: 40px;
+}
+.orderform::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.orderform__left,
+.orderform__right{
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+}
+.orderform__right{
+  padding-left: 10px;
+}
+.orderform__left{
+  padding-right: 10px;
+}
+.orderform label{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.orderform input[type="text"],
+.orderform input[type="email"],
+.orderform input[type="number"]{
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  background: #d3d2d3;
+  border: 1px solid #aeaeae;
+}
+.labelwrapper{
+
+}
+.labelwrapper::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.labelwrapper .half_label{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.labelwrapper .half_label:nth-child(2n){
+  padding-left: 10px;
+}
+.labelwrapper .half_label:nth-child(2n+1){
+  padding-right: 10px;
+}
+.labelwrapper .half_label input{
+  max-width: 100%;
+}
+.orderform__bottom{
+  text-align: right;
+}
 
