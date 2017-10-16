@@ -270,3 +270,50 @@ a img {
 .table .table__invisible{
   border: none;
 }
+/*
+ * About Pages
+ */
+
+.about_container{
+  width: 962px;
+  height: 150%;
+  max-width: 90%;
+  min-width: 200px;
+  margin: 20px auto !important;
+  box-sizing: border-box;
+  padding: 0px;
+  bottom: 10px;
+}
+.about_container--color{
+  background: rgb(135, 80, 29);
+  padding: 20px;
+  color: #fff;
+}
+
+.quote{
+    font-style: italic;
+    font-size: 20px;
+}
+.author {
+    padding: 10px;
+}
+
+.about_image_cover{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    margin: 20px;
+    float: right
+}
+
+.about_image_smaller{
+    max-width: 200px;
+    max-height: 200px;
+    background-size: cover;
+    margin: 20px;
+    float: left;
+}
+
+
+
+
