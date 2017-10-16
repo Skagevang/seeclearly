@@ -56,7 +56,37 @@
           </tr>
         </tfoot>
       </table>
+      <form class="orderform" action="/" method="POST">
+        <div class="orderform__left">
+          <label>Name<br>
+            <input type="text" name="name" placeholder="Fullname" required>
+          </label>
+          <label>E-Mail<br>
+            <input type="email" name="email" placeholder="E-mail" required>
+          </label>
+          <label>Subscribe to newsletter
+            <input type="checkbox" name="newsletter">
+          </label>
+        </div>
+        <div class="orderform__right">
+          <label>Street address<br>
+            <input type="text" name="street" required>
+          </label>
+          <div class="labelwrapper">
+            <label class="half_label">City<br>
+              <input type="text" name="city" required>
+            </label>
+            <label class="half_label">Postal/Zip Code<br>
+              <input type="number" name="zip" required>
+            </label>
+          </div>
+        </div>
+        <div class="orderform__bottom">
+          <input type="submit" value="Place Order" class="button">
+        </div>
+      </form>
     </div>
+
     <footer>
       <div id="address">
         Address
