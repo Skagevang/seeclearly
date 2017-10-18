@@ -17,6 +17,19 @@ body{
   font-family: arial;
 }
 
+.general_container{
+  width: 962px;
+
+  max-width: 90%;
+  min-width: 400px;
+  margin: 20px auto !important;
+  box-sizing: border-box;
+  padding: 0px;
+  background-color: rgb(135, 80, 29);
+  padding: 20px;
+  color: #fff;
+}
+
 #header {
   position: relative;
   margin: 0 70px;
@@ -65,7 +78,11 @@ li a:active {
 }
 
 #content {
-  margin: 0 70px 150px 70px;
+  max-width: 962px;
+  margin: 20px auto;
+  width: 90%;
+  background-color: rgb(135, 80, 29);
+  padding: 20px;
 }
 
 footer {
@@ -280,6 +297,9 @@ FAQ page
   max-width: 962px;
   margin: 20px auto !important;
   width: 90%;
+  background-color: white;
+  padding: 20px;
+
 
 /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH*/
 }
@@ -362,4 +382,5 @@ Thank You Page
 #thanks {
   float: right;
   margin: 20px;
+  width: 400px;
 }
