@@ -69,7 +69,7 @@
           Phone number:<br>
           <input type="text" name="phone"><br>
           Email:<br>
-          <input type="text" name="email"> <!-- Mulig bruke type="email" her -->
+          <input id="searchInput" type="email" name="email">
         </form>
       </div>
       <form>
@@ -77,23 +77,22 @@
         <input type="text" name="address"><br>
         
         Country:<br>
-        <select id="card" name="card">
-          <option>Light Wood</option>
-          <option>Dark Wood</option>
-          <option>Green Wood</option>
-          <option>Black Wood</option>
+        <select id="searchInput" name="card">
+          <option>Norway</option>
+          <option>Denmark</option>
+          <option>Sweeden</option>
+          <option>Finland</option>
         </select><br>
       
       
         Card type:<br>
-        <select id="card" name="card">
-          <option>Light Wood</option>
-          <option>Dark Wood</option>
-          <option>Green Wood</option>
-          <option>Black Wood</option>
+        <select id="searchInput" name="card">
+          <option>Visa</option>
+          <option>Master Card</option>
+          <option>American Express</option>
         </select>
       </form>
-      <a id="payment" href="thank_you.html">To payment</a>
+      <a class="button" id="checkout-button" href="thank_you.html">To payment</a>
     
     </div>
     

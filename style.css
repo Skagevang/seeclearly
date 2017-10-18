@@ -349,13 +349,9 @@ Checkout page
   margin-right: 100px;
 }
 
-#payment {
+#checkout-button {
   float: right;
   margin-top: 30px;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  background-color: green;
   /*ENDRE JAVASCRIPT FILEN FOR DETTE!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 }
