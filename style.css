@@ -19,7 +19,6 @@ body{
 
 .general_container{
   width: 962px;
-
   max-width: 90%;
   min-width: 400px;
   margin: 20px auto !important;
@@ -27,7 +26,9 @@ body{
   padding: 0px;
   background-color: rgb(135, 80, 29);
   padding: 20px;
-  color: #fff;
+  color: white;
+  font-family: arial;
+
 }
 
 #header {
@@ -292,25 +293,13 @@ a img {
 FAQ page
 */
 
-/*TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEMP!!! DO THIS FOR ALL SITES?*/
-.content-FIX-THIS-SHIT {
-  max-width: 962px;
-  margin: 20px auto !important;
-  width: 90%;
-  background-color: white;
-  padding: 20px;
-
-
-/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH*/
-}
-
 .faq-button {
   display: block;
   max-width: 600px;
   width: 100%;
   border-style: none;
   color: white;
-  background-color: rgb(135, 80, 29);
+  background-color: #4d2600;
   max-width: 800px;
   padding: 6px 12px;
   margin: 0px auto;
@@ -325,6 +314,10 @@ FAQ page
 
 .faq-button:focus {
   outline: 0;
+}
+
+#faq-intro {
+  margin-bottom: 50px;
 }
 
 .answer-div {
@@ -355,7 +348,7 @@ Checkout page
 }
 
 #checkout td, th {
-    border: 1px solid black;
+    border: 1px solid #c68c53;
     text-align: left;
     padding: 8px;
 }
@@ -372,8 +365,10 @@ Checkout page
 #checkout-button {
   float: right;
   margin-top: 30px;
-  /*ENDRE JAVASCRIPT FILEN FOR DETTE!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
+}
+.faq-input {
+  background-color: rgb(235, 200, 150);
+  width: 200px;
 }
 
 /*
