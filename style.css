@@ -355,3 +355,11 @@ Checkout page
   /*ENDRE JAVASCRIPT FILEN FOR DETTE!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 }
+
+/*
+Thank You Page 
+*/
+#thanks {
+  float: right;
+  margin: 20px;
+}
