@@ -358,6 +358,14 @@ a img {
   background: #d3d2d3;
   border: 1px solid #aeaeae;
 }
+.orderform input.invalid{
+  border-color: red;
+  border-width: 2px;
+}
+.orderform input.valid{
+  border-color: green;
+  border-width: 2px;
+}
 .labelwrapper{
 
 }
