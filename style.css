@@ -79,6 +79,13 @@ footer {
   overflow: hidden;
   font-family: serif;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#footerItem {
+  margin: 0 50px;
 }
 
 footer img {
@@ -89,23 +96,6 @@ a img {
   margin-top: 10px;
   margin-right: 10px;
 }
-
-#address {
-  position: absolute;
-  left: 50px;
-}
-
-#contactInformation {
-  position: absolute;
-  left: 250px;
-}
-
-#socialMedia {
-  position: absolute;
-  left: 500px;
-}
-
-
 
   /*
   * products page
@@ -391,4 +381,3 @@ a img {
 .orderform__bottom{
   text-align: right;
 }
-
