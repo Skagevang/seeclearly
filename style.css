@@ -13,7 +13,6 @@ body{
 .wrapper {
   flex: 1 0 auto;
   position: relative;
-  padding: 10px;
   font-family: arial;
 }
 
@@ -32,10 +31,6 @@ body{
 #searchInput, input[type="text"] {
   background-color: rgb(235, 200, 150);
   width: 200px;
-}
-
-#navbar {
-  margin: 0 70px;
 }
 
 ul {
@@ -62,10 +57,6 @@ li a:hover {
 
 li a:active {
   background-color: green;
-}
-
-#content {
-  margin: 0 70px 150px 70px;
 }
 
 footer {
@@ -380,4 +371,17 @@ a img {
 }
 .orderform__bottom{
   text-align: right;
+}
+
+/*
+* Contact Page
+*/
+
+#marginTop {
+  margin-top: 40px;
+}
+
+.flexSpace {
+  display: flex;
+  justify-content: space-between;
 }
