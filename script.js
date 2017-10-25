@@ -19,8 +19,7 @@ function loadNewPage(resp){
 }
 function navigateWebsite(evt){
   evt.preventDefault();
-  console.log("navigating now!");
-  //history.pushState(null, null, this.getAttribute("href"));
+  history.pushState(null, null, this.getAttribute("href"));
   getData(this.getAttribute("data-part"), loadNewPage);
   var anchors = document.querySelectorAll("#navbar a");
   for(var i = 0; i < anchors[i];i++){
@@ -37,7 +36,6 @@ getData('/header.part', function(resp){
   wrapper.innerHTML = resp.response + wrapper.innerHTML; // Prepend header
   var anchors = document.getElementsByTagName('a');
   for(var i = 0; i < anchors.length; i++){
-    console.log("Adding to element");
     if (anchors[i].href === window.location.href) {
       anchors[i].style.backgroundColor = 'green';
     }
