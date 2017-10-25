@@ -256,22 +256,6 @@ a img {
  * About Pages
  */
 
-.about_container{
-  width: 962px;
-  height: 150%;
-  max-width: 90%;
-  min-width: 200px;
-  margin: 20px auto !important;
-  box-sizing: border-box;
-  padding: 0px;
-  bottom: 10px;
-}
-.about_container--color{
-  background: rgb(135, 80, 29);
-  padding: 20px;
-  color: #fff;
-}
-
 .quote{
     font-style: italic;
     font-size: 20px;
