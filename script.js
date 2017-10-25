@@ -18,34 +18,42 @@ function loadNewPage(resp){
   content.innerHTML = resp.response;
 }
 function navigateWebsite(evt){
-  evt.preventDefault();
-  history.pushState(null, null, this.getAttribute("href"));
-  getData(this.getAttribute("data-part"), loadNewPage);
-  var anchors = document.querySelectorAll("#navbar a");
-  for(var i = 0; i < anchors[i];i++){
-    anchors[i].style.backgroundColor = "";
+  if(this.getAttribute("data-part")){
+    evt.preventDefault();
+    history.pushState(null, null, this.getAttribute("href"));
+    getData(this.getAttribute("data-part"), loadNewPage);
+    var anchors = document.querySelectorAll("#navbar a");
+    for(var i = 0; i < anchors.length;i++){
+      anchors[i].style.removeProperty("background-color");
+    }
+    console.log(this);
+    this.style.backgroundColor = "green";
+    return false; // Stop further navigation
   }
-  this.style.backgroundColor = "green";
-
-  return false; // Stop further navigation
 }
 
+function updateClickListeners(){
 
-getData('/header.part', function(resp){
-  var wrapper = document.querySelector(".wrapper");
-  wrapper.innerHTML = resp.response + wrapper.innerHTML; // Prepend header
-  var anchors = document.getElementsByTagName('a');
+  var anchors = document.querySelectorAll("a");
   for(var i = 0; i < anchors.length; i++){
     if (anchors[i].href === window.location.href) {
       anchors[i].style.backgroundColor = 'green';
     }
     anchors[i].addEventListener('click', navigateWebsite);
+    console.log("Attatching to", anchors[i]);
   }
+}
+
+getData('/header.part', function(resp){
+  var wrapper = document.querySelector(".wrapper");
+  wrapper.innerHTML = resp.response + wrapper.innerHTML; // Prepend header
+  updateClickListeners();
 });
 
 getData('/footer.part', function(resp){
   var wrapper = document.querySelector(".wrapper");
   wrapper.parentNode.innerHTML += resp.response;
+  updateClickListeners();
 })
 
 //FAQ - show/hide the answer part of the "questions" and changes arrow direction
