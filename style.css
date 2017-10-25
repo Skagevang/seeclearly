@@ -16,20 +16,6 @@ body{
   font-family: arial;
 }
 
-.general_container{
-  width: 962px;
-  max-width: 90%;
-  min-width: 400px;
-  margin: 20px auto !important;
-  box-sizing: border-box;
-  padding: 0px;
-  background-color: rgb(135, 80, 29);
-  padding: 20px;
-  color: white;
-  font-family: arial;
-
-}
-
 #header {
   position: relative;
   margin: 0 70px;
@@ -115,9 +101,16 @@ a img {
 .container{
   width: 962px;
   max-width: 90%;
-  margin: 20px auto !important; /* TODO: Remove !important*/
+  margin: 20px auto; /* TODO: Remove !important*/
   box-sizing: border-box;
 }
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .container--color{
   background: rgb(135, 80, 29);
   padding: 20px;
@@ -384,7 +377,7 @@ Thank You Page
     height: 400px;
     background-size: cover;
     margin: 20px;
-    float: right
+    float: right;
 }
 
 .about_image_smaller{
