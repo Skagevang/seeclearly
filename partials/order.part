@@ -1,0 +1,60 @@
+
+      <div class="container container--color">
+        <h1>Checkout</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Options</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="../img/products/glass.png"></td>
+              <td>Amazing glasses nr 1</td>
+              <td>Size: small<br>Prescription: +4<br>Color: Light wood</td>
+              <td>1</td>
+              <td>99$</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" class="table__invisible"></td>
+              <td colspan="2">Total Price including taxes</td>
+              <td>99$</td>
+            </tr>
+          </tfoot>
+        </table>
+        <form class="orderform" action="/" method="POST">
+          <div class="orderform__left">
+            <label>Name<br>
+              <input type="text" name="name" placeholder="Fullname" required>
+            </label>
+            <label>E-Mail<br>
+              <input type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <label>Subscribe to newsletter
+              <input type="checkbox" name="newsletter">
+            </label>
+          </div>
+          <div class="orderform__right">
+            <label>Street address<br>
+              <input type="text" name="street" required>
+            </label>
+            <div class="labelwrapper">
+              <label class="half_label">Postal/Zip Code<br>
+                <input type="number" name="zip" required>
+              </label>
+              <label class="half_label">City<br>
+                <input type="text" name="city" required>
+              </label>
+            </div>
+          </div>
+          <div class="orderform__bottom">
+            <input type="submit" value="Place Order" class="button">
+          </div>
+        </form>
+      </div>

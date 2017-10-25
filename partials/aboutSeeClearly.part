@@ -1,15 +1,4 @@
-<!DOCTYPE html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>About|SeeClearly</title>
-  <link rel="icon" type="image/png" href="./img/general/favicon.png">
-  <link rel="stylesheet" href="./style.css"/>
-</head>
-<body>
-  <div class="wrapper">
-    <main class="main">
       <div class="about_container about_container--color">
         <div>
           <img src="img/general/see_clearly_family.jpg" class="about_image_cover"
@@ -105,7 +94,3 @@
           </p>
         </div>
       </div>
-    </main>
-  </div>
-  <script src="./script.js"></script>
-</bodChange for the better>

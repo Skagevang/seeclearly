@@ -1,20 +1,9 @@
-<!DOCTYPE html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>About|SeeClearly</title>
-  <link rel="icon" type="image/png" href="./img/general/favicon.png">
-  <link rel="stylesheet" href="./style.css"/>
-</head>
-<body>
-  <div class="wrapper">
-    <main class="main">
       <div class="about_container about_container--color">
         <div>
-          <img src="img/general/see_clearly_family.jpg" class="about_image_cover"
-          alt="">
-          <h1>About See Clearly</h1>
+          <img src="img/general/isak_face_2.jpg" class="about_image_cover"
+          alt="Image of Isak M Silva">
+          <h1>About Isak Maluf Silva</h1>
           <p>
             Lorem ipsum dolor sit amet, at pellentesque tortor, pretium turpis
             ultrices nulla wisi magna, porttitor augue at lectus nullam eligendi
@@ -35,28 +24,17 @@
            molestie integer, elit sed. Viverra aliquam, varius curabitur sodales
            sollicitudin pellentesque, ut est in.
           </p>
-          <p>
-           Lorem ipsum dolor sit amet, at pellentesque tortor, pretium turpis
-           ultrices nulla wisi magna, porttitor augue at lectus nullam eligendi
-           hendrerit, ut placerat dui maecenas mi morbi, dui pellentesque nulla
-           senectus vulputate pulvinar. Vel elit vivamus dui arcu dolores duis,
-           erat mollis lacus, et dis, aliquam quis. Eget nec amet placerat porta
-           nostra orci, nulla mauris amet, cursus commodo ante purus, natoque nam
-           molestie integer, elit sed. Viverra aliquam, varius curabitur sodales
-           sollicitudin pellentesque, ut est in.
-          </p>
         </div>
         <div>
-          <img src="img/general/see_clearly_environment.jpg" class="about_image_smaller"
-          alt="">
-          <h2>The ideology</h2>
-          <blockquote cite="https://www.biography.com/people/margaret-mead-9404056">
+          <img src="img/general/isak_family.jpg" class="about_image_smaller"
+          alt="Image of Forrest">
+          <h2>The Founder</h2>
+          <blockquote>
             <span class="quote">
-              Never believe that a few caring people can't change the world. For,
-              indeed, that's all who ever have.<br>
+              My dream is of a place and a time where the earth once again looks towards Amazonas for inspiration, life and dreams. <br>
             </span>
             <small class="author">
-               - Margaret Mead - American cultural anthropologist
+               - Isak Maluf Silva - environmentalist, prodigy, father, friend
             </small>
           </blockquote>
           <p>
@@ -69,20 +47,10 @@
             liber inciderint, no feugiat urbanitas sadipscing cum. Ex dolorem albucius
             torquatos cum, ad qui lorem efficiantur.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, his erat dignissim ea, id oratio nostrum
-            vel, invenire salutatus conceptam duo id. Mel no petentium torquatos,
-            has laoreet detracto ex. Cu mea quot salutandi. Id animal molestie
-            scripserit his, per te nulla qualisque instructior, soleat oportere vix
-            ne.Te eum soluta scripta, eam illum prompta gloriatur ei. Simul virtute has ea,
-            cu quis ornatus recteque mel. Magna voluptaria percipitur mei eu, ne sed
-            liber inciderint, no feugiat urbanitas sadipscing cum. Ex dolorem albucius
-            torquatos cum, ad qui lorem efficiantur.
-          </p>
         </div>
         <div>
-          <img src="img/general/see_clearly_change.jpg" class="about_image_smaller" alt="">
-          <h2>Change for the better</h2>
+          <img src="img/general/isak_family_2.jpg" class="about_image_smaller" alt="Image of Amazonas">
+          <h2>Family</h2>
           <p>
             Lorem ipsum dolor sit amet, his erat dignissim ea, id oratio nostrum
             vel, invenire salutatus conceptam duo id. Mel no petentium torquatos,
@@ -103,9 +71,6 @@
             liber inciderint, no feugiat urbanitas sadipscing cum. Ex dolorem albucius
             torquatos cum, ad qui lorem efficiantur.
           </p>
+
         </div>
       </div>
-    </main>
-  </div>
-  <script src="./script.js"></script>
-</bodChange for the better>
