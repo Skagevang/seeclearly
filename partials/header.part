@@ -1,0 +1,19 @@
+
+    <header>
+      <div id="header">
+        <img src="./img/general/logo.png" alt="Logo" width="300"/>
+        <span id="searchBox">
+          <input type="text" placeholder="Find your spectacles"/>
+          <button class="button">Search</button>
+        </span>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html" data-part="index.part">Home</a></li>
+          <li><a href="about.html" data-part="about.part">About</a></li>
+          <li><a href="products.html" data-part="products.part">Products</a></li>
+          <li><a href="contact.html" data-part="contact.part">Contact</a></li>
+          <li><a href="faq.html" data-part="faq.part">FAQ</a></li>
+        </ul>
+      </div>
+    </header>

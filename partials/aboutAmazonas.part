@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<!---
-  FILE NAME: aboutIsakMSilva.html
-  WRITTEN BY: Mikkel Svagaard
-  WHEN: 12. October 2017 
-  PURPOSE: Introduce the visitor to the situation occurring in Amazonas
- -->  
 
-
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>About|SeeClearly</title>
-  <link rel="icon" type="image/png" href="./img/general/favicon.png">
-  <link rel="stylesheet" href="./style.css"/>
-</head>
-<body>
-  <div class="wrapper">
-    <main class="main">
     <div class="container container--color">
       <div>
         <img src="img/general/amazonas_river.jpg" class="about_image_cover"
@@ -90,11 +71,3 @@
           cu quis ornatus recteque mel. Magna voluptaria percipitur mei eu, ne sed
           liber inciderint, no feugiat urbanitas sadipscing cum. Ex dolorem albucius
           torquatos cum, ad qui lorem efficiantur.
-
-        </div>
-      </div>
-    </main>
-  </div>
-  <script src="./script.js"></script>
-</body>
-</html>

@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<!---
-  FILE NAME: aboutSeeClearly.html
-  WRITTEN BY: Mikkel Svagaard
-  WHEN: 12. October 2017 
-  PURPOSE: Introduce the visitor to the organization
- -->  
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>About|SeeClearly</title>
-  <link rel="icon" type="image/png" href="./img/general/favicon.png">
-  <link rel="stylesheet" href="./style.css"/>
-</head>
-<body>
-  <div class="wrapper">
-    <main class="main">
 
       <div>
         <img src="img/general/see_clearly_environment.jpg" class="about_image_smaller"
@@ -76,7 +58,3 @@
         </p>
       </div>
     </div>
-    </main>
-  </div>
-  <script src="./script.js"></script>
-</bodChange for the better>
