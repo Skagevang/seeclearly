@@ -377,6 +377,20 @@ a img {
 * Contact Page
 */
 
+textarea {
+  width: 350px;
+  height: 250px;
+  resize: none;
+}
+
+#marginDonate {
+  margin: 50px 50px 0 0;
+}
+
+.center {
+  text-align: center;
+}
+
 #marginTop {
   margin-top: 40px;
 }
