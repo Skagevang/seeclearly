@@ -27,7 +27,7 @@
         </ul>
       </div>
     </header>
-    <div id="content" class="container container--color">
+    <div class="container container--color">
       <h1>Checkout</h1>
       <table class="table">
         <thead>
@@ -56,29 +56,54 @@
           </tr>
         </tfoot>
       </table>
-    </div>
-    <footer>
-      <div id="address">
-        Address
-        <div>NV-fakultetet,</div>
-        <div>Høgskoleringen 5,</div>
-        <div>7491 Trondheim</div>
-      </div>
-      <div id="contactInformation">
-        Contact Information
-        <div>Phone: 123 456 789</div>
-        <div>E-mail: info@seeclearly.com</div>
-      </div>
-      <div id="socialMedia">
-        Social Media
-        <div>
-          <a href="http://facebook.com" target="_blank"><img src="../img/footer/facebook.png" alt="Facebook"/></a>
-          <a href="http://instagram.com" target="_blank"><img src="../img/footer/instagram.png" alt="Instagram"/></a>
-          <a href="http://twitter.com" target="_blank"><img src="../img/footer/twitter.png" alt="Twitter"/></a>
+      <form class="orderform" action="/" method="POST">
+        <div class="orderform__left">
+          <label>Name<br>
+            <input type="text" name="name" placeholder="Fullname" required>
+          </label>
+          <label>E-Mail<br>
+            <input type="email" name="email" placeholder="E-mail" required>
+          </label>
+          <label>Subscribe to newsletter
+            <input type="checkbox" name="newsletter">
+          </label>
         </div>
-      </div>
-    </footer>
+        <div class="orderform__right">
+          <label>Street address<br>
+            <input type="text" name="street" required>
+          </label>
+          <div class="labelwrapper">
+            <label class="half_label">Postal/Zip Code<br>
+              <input type="number" name="zip" required>
+            </label>
+            <label class="half_label">City<br>
+              <input type="text" name="city" required>
+            </label>
+          </div>
+        </div>
+        <div class="orderform__bottom">
+          <input type="submit" value="Place Order" class="button">
+        </div>
+      </form>
+    </div>
   </div>
+  <footer>
+    <div>
+      <u>Address:</u><br/>NV-fakultetet,<br/>Høgskoleringen 5,<br/>7491 Trondheim
+    </div>
+    <div id="footerItem">
+      <u>Contact Information:</u><br/>Phone: 123 456 789<br/>E-mail: info@seeclearly.com
+    </div>
+    <div>
+      <u>Social Media:</u><br/>
+      <div>
+        <a href="http://facebook.com" target="_blank"><img src="../img/footer/facebook.png" alt="Facebook"/></a>
+        <a href="http://instagram.com" target="_blank"><img src="../img/footer/instagram.png" alt="Instagram"/></a>
+        <a href="http://twitter.com" target="_blank"><img src="../img/footer/twitter.png" alt="Twitter"/></a>
+      </div>
+    </div>
+  </footer>
   <script src="../script.js"></script>
+  <script src="../js/formvalidation.js"></script>
 </body>
 </html>

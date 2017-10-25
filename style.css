@@ -13,7 +13,6 @@ body{
 .wrapper {
   flex: 1 0 auto;
   position: relative;
-  padding: 10px;
   font-family: arial;
 }
 
@@ -46,10 +45,6 @@ body{
 #searchInput, input[type="text"] {
   background-color: rgb(235, 200, 150);
   width: 200px;
-}
-
-#navbar {
-  margin: 0 70px;
 }
 
 ul {
@@ -85,7 +80,6 @@ li a:active {
   background-color: rgb(135, 80, 29);
   padding: 20px;
 }
-
 footer {
   bottom: 0;
   width: 100%;
@@ -97,6 +91,13 @@ footer {
   overflow: hidden;
   font-family: serif;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#footerItem {
+  margin: 0 50px;
 }
 
 footer img {
@@ -107,23 +108,6 @@ a img {
   margin-top: 10px;
   margin-right: 10px;
 }
-
-#address {
-  position: absolute;
-  left: 50px;
-}
-
-#contactInformation {
-  position: absolute;
-  left: 250px;
-}
-
-#socialMedia {
-  position: absolute;
-  left: 500px;
-}
-
-
 
   /*
   * products page
@@ -197,10 +181,10 @@ a img {
 .products__extra{
   max-height: 0;
   overflow-y: hidden;
-  transition: .2s ease-in-out all;
+  transition: .4s ease-in-out all;
 }
 .products:hover .products__extra{
-  max-height: 200px;
+  max-height: 250px;
 }
 
 /*
@@ -383,3 +367,121 @@ Thank You Page
   margin: 20px;
   width: 400px;
 }
+
+ * About Pages
+ */
+
+.quote{
+    font-style: italic;
+    font-size: 20px;
+}
+.author {
+    padding: 10px;
+}
+
+.about_image_cover{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    margin: 20px;
+    float: right
+}
+
+.about_image_smaller{
+    max-width: 200px;
+    max-height: 200px;
+    background-size: cover;
+    margin: 20px;
+    float: left;
+}
+
+
+
+
+
+.orderform{
+  margin-top: 40px;
+}
+.orderform::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.orderform__left,
+.orderform__right{
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+}
+.orderform__right{
+  padding-left: 10px;
+}
+.orderform__left{
+  padding-right: 10px;
+}
+.orderform label{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.orderform input[type="text"],
+.orderform input[type="email"],
+.orderform input[type="number"]{
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  background: #d3d2d3;
+  border: 1px solid #aeaeae;
+}
+.orderform input.invalid{
+  border-color: red;
+  border-width: 2px;
+}
+.orderform input.valid{
+  border-color: green;
+  border-width: 2px;
+}
+.labelwrapper{
+
+}
+.labelwrapper::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.labelwrapper .half_label{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.labelwrapper .half_label:nth-child(2n){
+  padding-left: 10px;
+}
+.labelwrapper .half_label:nth-child(2n+1){
+  padding-right: 10px;
+}
+.labelwrapper .half_label input{
+  max-width: 100%;
+}
+.orderform__bottom{
+  text-align: right;
+}
+
+/*
+* Contact Page
+*/
+
+#marginTop {
+  margin-top: 40px;
+}
+
+.flexSpace {
+  display: flex;
+  justify-content: space-between;
+}
+
