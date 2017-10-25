@@ -16,19 +16,22 @@ body{
   font-family: arial;
 }
 
-#header {
-  position: relative;
-  margin: 0 70px;
+#logoSearch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 962px;
+  max-width: 90%;
+  margin: 20px auto !important; /* TODO: Remove !important*/
+  box-sizing: border-box;
 }
 
-#searchBox {
-  float: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+#searchForm {
+  align-self: flex-end;
 }
 
-#searchInput, input[type="text"] {
+input[type="text"] {
   background-color: rgb(235, 200, 150);
   width: 200px;
 }
@@ -40,9 +43,13 @@ ul {
   overflow: hidden;
   width: 100%;
   background-color: rgb(135, 80, 29);
+  width: 962px;
+  max-width: 90%;
+  margin: 20px auto !important; /* TODO: Remove !important*/
+  box-sizing: border-box;
 }
 
-li a {
+li a, .dropbtn {
   float: left;
   display: block;
   color: white;
@@ -51,12 +58,31 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li a:hover, .dropdown-content a:hover {
   background-color: rgb(125, 98, 63);
 }
 
-li a:active {
+li a:active, .dropdown-content a:active {
   background-color: green;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  left: 120px;
+  top: 240px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: white;
+  background-color: rgb(135, 80, 29);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  float: none;
 }
 
 footer {
@@ -132,10 +158,10 @@ a img {
   text-align: right;
 }
 .button{
-  background: #386b00;
+  background: green;
   color: #fff;
   display: inline-block;
-  border: 2px solid #386b00;
+  border: 2px solid green;
   padding: 6px 10px;
   font-size: 18px;
   line-height: 24px;
@@ -144,7 +170,7 @@ a img {
   cursor: pointer;
 }
 .button:hover, .button:focus{
-  color: #386b00;
+  color: green;
   background: #fff;
 }
 .products{
