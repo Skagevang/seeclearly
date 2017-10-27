@@ -1,7 +1,7 @@
 
 function getData(url, cb){
   var request = new XMLHttpRequest();
-  request.open('GET', "/partials/"+url, true);
+  request.open('GET', "partials/"+url, true);
   request.onload = function () {
       if (request.status >= 200 && request.status < 400) {
           // Success
