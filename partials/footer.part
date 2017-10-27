@@ -1,0 +1,16 @@
+<footer>
+  <div>
+    <u>Address:</u><br/>NV-fakultetet,<br/>Høgskoleringen 5,<br/>7491 Trondheim
+  </div>
+  <div id="footerItem">
+    <u>Contact Information:</u><br/>Phone: 123 456 789<br/>E-mail: info@seeclearly.com
+  </div>
+  <div>
+    <u>Social Media:</u><br/>
+    <div>
+      <a href="http://facebook.com" target="_blank"><img src="./img/footer/facebook.png" alt="Facebook"/></a>
+      <a href="http://instagram.com" target="_blank"><img src="./img/footer/instagram.png" alt="Instagram"/></a>
+      <a href="http://twitter.com" target="_blank"><img src="./img/footer/twitter.png" alt="Twitter"/></a>
+    </div>
+  </div>
+</footer>
