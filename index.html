@@ -9,7 +9,41 @@
 </head>
 <body>
   <div class="wrapper">
+    <!-- Code for slideshow is taken from  
+          https://www.w3schools.com/howto/howto_js_slideshow.asp
+          and only modified slightly to suit our needs and preferences.
+     -->
     <div class="container container--color">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/general/slideshow1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/general/slideshow2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/general/slideshow3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
       <h1>SeeClearly</h1>
       <p>
         Lorem ipsum dolor sit amet, his erat dignissim ea, id oratio nostrum vel, invenire salutatus conceptam duo id. Mel no petentium torquatos, has laoreet detracto ex. Cu mea quot salutandi. Id animal molestie scripserit his, per te nulla qualisque instructior, soleat oportere vix ne.
