@@ -122,6 +122,7 @@ a img {
   max-width: 90%;
   margin: 20px auto !important; /* TODO: Remove !important*/
   box-sizing: border-box;
+  overflow: auto;
 }
 .container--color{
   background: rgb(135, 80, 29);
