@@ -1,38 +1,23 @@
+<!--
+FILE NAME: checkout.html
+WRITTEN BY: Sigurd Aasbrenn
+WHEN: October 2017
+PURPOSE: Lets the customer enter personalia to let them buy the product 
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About|SeeClearly</title>
+  <title>Checkout | SeeClearly</title>
   <link rel="icon" type="image/png" href="./img/general/favicon.png">
   <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <div id="header">
-        <img src="./img/general/logo.png" alt="Logo" width="300"/>
-        <span id="searchBox">
-          <input type="text" placeholder="Find your spectacles"/>
-          <button class="button">Search</button>
-        </span>
-      </div>
-      <div id="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-    </header>
-  </div>
-    
-    <div class="general_container">
-      
+    <div class="container container--color">
       <h1>Checkout</h1>
-      
       <table id="checkout">
         <thead>
           <tr>
@@ -45,7 +30,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><img id="checkout-glasses" src="img/products/glass.png"></td>
+            <td><img id="checkout-glasses" src="img/products/glass.png" alt="Your glasses"></td>
             <td>BRILLE3000</td>
             <td>30+</td>
             <td>6</td>
@@ -59,8 +44,6 @@
           </tr>
         </tbody>
       </table>
-
-
       <div id="left-div">
         <form>
           First name:<br>
@@ -76,7 +59,6 @@
       <form>
         Adress:<br>
         <input type="text" name="address"><br>
-        
         Country:<br>
         <select class="faq-input" name="card">
           <option>Norway</option>
@@ -84,8 +66,6 @@
           <option>Sweeden</option>
           <option>Finland</option>
         </select><br>
-      
-      
         Card type:<br>
         <select class="faq-input" name="card">
           <option>Visa</option>
@@ -93,30 +73,9 @@
           <option>American Express</option>
         </select>
       </form>
-      <a class="button" id="checkout-button" href="thankYou.html">To payment</a>   
+      <a class="button" id="checkout-button" href="thankYou.html">To payment</a>
     </div>
-  
-  <footer>
-    <div id="address">
-      Address
-      <div>NV-fakultetet,</div>
-      <div>Høgskoleringen 5,</div>
-      <div>7491 Trondheim</div>
-    </div>
-    <div id="contactInformation">
-      Contact Information
-      <div>Phone: 123 456 789</div>
-      <div>E-mail: info@seeclearly.com</div>
-    </div>
-    <div id="socialMedia">
-      Social Media
-      <div>
-        <a href="http://facebook.com" target="_blank"><img src="./img/footer/facebook.png" alt="Facebook"/></a>
-        <a href="http://instagram.com" target="_blank"><img src="./img/footer/instagram.png" alt="Instagram"/></a>
-        <a href="http://twitter.com" target="_blank"><img src="./img/footer/twitter.png" alt="Twitter"/></a>
-      </div>
-    </div>
-  </footer>
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>
