@@ -612,8 +612,9 @@ textarea {
 #canvasCounterField{
   position: relative;
   text-align: center;
-  top: -30px;
+  top: -32px;
   z-index: 1;
+  font-size: 20px;
 }
 
 #canvasContainer{
