@@ -3,12 +3,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Order | SeeClearly</title>
-  <link rel="icon" type="image/png" href="img/general/favicon.png">
-  <link rel="stylesheet" href="style.css"/>
+  <title>Product|SeeClearly</title>
+  <link rel="icon" type="image/png" href="../img/general/favicon.png">
+  <link rel="stylesheet" href="../style.css"/>
 </head>
 <body>
   <div class="wrapper">
+    <header>
+      <div id="header">
+        <img src="../img/general/logo.png" alt="Logo" width="300"/>
+        <span id="searchBox">
+          <input type="text" placeholder="Find your spectacles"/>
+          <button id="searchButton">Search</button>
+        </span>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../products.html">Products</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </header>
     <div class="container container--color">
       <h1>Checkout</h1>
       <table class="table">
@@ -23,7 +41,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><img src="img/products/glass.png" alt="Your glasses"></td>
+            <td><img src="../img/products/glass.png"></td>
             <td>Amazing glasses nr 1</td>
             <td>Size: small<br>Prescription: +4<br>Color: Light wood</td>
             <td>1</td>
@@ -69,7 +87,23 @@
       </form>
     </div>
   </div>
-  <script src="script.js"></script>
-  <script src="js/formvalidation.js"></script>
+  <footer>
+    <div>
+      <u>Address:</u><br/>NV-fakultetet,<br/>Høgskoleringen 5,<br/>7491 Trondheim
+    </div>
+    <div id="footerItem">
+      <u>Contact Information:</u><br/>Phone: 123 456 789<br/>E-mail: info@seeclearly.com
+    </div>
+    <div>
+      <u>Social Media:</u><br/>
+      <div>
+        <a href="http://facebook.com" target="_blank"><img src="../img/footer/facebook.png" alt="Facebook"/></a>
+        <a href="http://instagram.com" target="_blank"><img src="../img/footer/instagram.png" alt="Instagram"/></a>
+        <a href="http://twitter.com" target="_blank"><img src="../img/footer/twitter.png" alt="Twitter"/></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+  <script src="../js/formvalidation.js"></script>
 </body>
 </html>

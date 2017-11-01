@@ -14,24 +14,36 @@ body{
   flex: 1 0 auto;
   position: relative;
   font-family: arial;
+  min-width: 400px;
 }
 
-#logoSearch {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+.general_container{
   width: 962px;
   max-width: 90%;
-  margin: 20px auto !important; /* TODO: Remove !important*/
+  min-width: 400px;
+  margin: 20px auto !important;
   box-sizing: border-box;
+  padding: 0px;
+  background-color: rgb(135, 80, 29);
+  padding: 20px;
+  color: white;
+  font-family: arial;
+
 }
 
-#searchForm {
-  align-self: flex-end;
+#header {
+  position: relative;
+  margin: 0 70px;
 }
 
-input[type="text"] {
+#searchBox {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#searchInput, input[type="text"] {
   background-color: rgb(235, 200, 150);
   width: 200px;
 }
@@ -43,13 +55,9 @@ ul {
   overflow: hidden;
   width: 100%;
   background-color: rgb(135, 80, 29);
-  width: 962px;
-  max-width: 90%;
-  margin: 20px auto !important; /* TODO: Remove !important*/
-  box-sizing: border-box;
 }
 
-li a, .dropbtn {
+li a {
   float: left;
   display: block;
   color: white;
@@ -58,33 +66,21 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown-content a:hover {
+li a:hover {
   background-color: rgb(125, 98, 63);
 }
 
-li a:active, .dropdown-content a:active {
+li a:active {
   background-color: green;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-  left: 120px;
-  top: 240px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  color: white;
+#content {
+  max-width: 962px;
+  margin: 20px auto;
+  width: 90%;
   background-color: rgb(135, 80, 29);
-  z-index: 1;
+  padding: 20px;
 }
-
-.dropdown-content a {
-  display: block;
-  float: none;
-}
-
 footer {
   bottom: 0;
   width: 100%;
@@ -122,7 +118,6 @@ a img {
   max-width: 90%;
   margin: 20px auto !important; /* TODO: Remove !important*/
   box-sizing: border-box;
-  overflow: auto;
 }
 .container--color{
   background: rgb(135, 80, 29);
@@ -159,10 +154,10 @@ a img {
   text-align: right;
 }
 .button{
-  background: green;
+  background: #386b00;
   color: #fff;
   display: inline-block;
-  border: 2px solid green;
+  border: 2px solid #386b00;
   padding: 6px 10px;
   font-size: 18px;
   line-height: 24px;
@@ -171,7 +166,7 @@ a img {
   cursor: pointer;
 }
 .button:hover, .button:focus{
-  color: green;
+  color: #386b00;
   background: #fff;
 }
 .products{
@@ -285,6 +280,7 @@ FAQ page
 
 .faq-button {
   display: block;
+  max-width: 600px;
   width: 100%;
   border-style: none;
   color: white;
@@ -312,7 +308,7 @@ FAQ page
 .answer-div {
   color: white;
   background-color: rgb(96, 51, 9);
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 5px 20px;
   display: none;
@@ -328,7 +324,7 @@ arrow {
 }
 
 /*
-Checkout page
+Checkout page 
 */
 #checkout {
   border-collapse: collapse;
@@ -365,7 +361,7 @@ Checkout page
 }
 
 /*
-Thank You Page
+Thank You Page 
 */
 #thanks {
   float: right;
@@ -505,106 +501,36 @@ textarea {
 }
 
 /*
-*Code for slideshow on index page
-*/
+ * Tree Counter Feature On The Homepage
+ */
 
-/*
-* Code for slideshow is taken from  
-* https://www.w3schools.com/howto/howto_js_slideshow.asp
-* and only modified slightly to suit our needs and preferences.
-*/
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  height: 300px;
-  overflow: hidden;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+#treeCounterContainer{
   text-align: center;
+  margin: auto;
+  margin-top: 10px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+#canvasCounterField{
+  position: relative;
+  text-align: center;
+  top: -30px;
+  z-index: 1;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#canvasContainer{
+  width: 60%;
+  height: 40px;
+  float: right;
+  display: block;
+  border: 10px; 
+  overflow: visible;
+}
+#treeCanvas{
+  width:100%;
+  height: 40px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
+#counterBanner{
+  font-size: 28px; 
+  font-weight: bold;
+)
