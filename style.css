@@ -16,24 +16,12 @@ body{
   font-family: arial;
 }
 
+/* HEADER */
 #logoSearch {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   width: 962px;
   max-width: 90%;
   margin: 20px auto !important; /* TODO: Remove !important*/
   box-sizing: border-box;
-}
-
-#searchForm {
-  align-self: flex-end;
-}
-
-input[type="text"] {
-  background-color: rgb(235, 200, 150);
-  width: 200px;
 }
 
 ul {
@@ -78,6 +66,9 @@ li a:active, .dropdown-content a:active {
   color: white;
   background-color: rgb(135, 80, 29);
   z-index: 1;
+  border-color: sienna;
+  border-style: solid;
+  border-width: 3px;
 }
 
 .dropdown-content a {
@@ -509,7 +500,7 @@ textarea {
 */
 
 /*
-* Code for slideshow is taken from  
+* Code for slideshow is taken from
 * https://www.w3schools.com/howto/howto_js_slideshow.asp
 * and only modified slightly to suit our needs and preferences.
 */
@@ -599,12 +590,11 @@ textarea {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
-
