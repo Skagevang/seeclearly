@@ -14,6 +14,7 @@ body{
   flex: 1 0 auto;
   position: relative;
   font-family: arial;
+  min-width: 400px;
 }
 
 .general_container{
@@ -499,3 +500,37 @@ textarea {
   justify-content: space-between;
 }
 
+/*
+ * Tree Counter Feature On The Homepage
+ */
+
+#treeCounterContainer{
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#canvasCounterField{
+  position: relative;
+  text-align: center;
+  top: -30px;
+  z-index: 1;
+}
+
+#canvasContainer{
+  width: 60%;
+  height: 40px;
+  float: right;
+  display: block;
+  border: 10px; 
+  overflow: visible;
+}
+#treeCanvas{
+  width:100%;
+  height: 40px;
+}
+
+#counterBanner{
+  font-size: 28px; 
+  font-weight: bold;
+)

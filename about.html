@@ -10,11 +10,24 @@
 <body>
   <div class="wrapper">
     <main class="main">
+    <div class="container">
+        <!--  The following div contains the treeCounter module that javascript
+          feature 5 works on, named: A visual represntation of how many trees
+          that have been saved -->
+        <div id="treeCounterContainer">
+          <span id="counterBanner">Help us reach our goal:</span>
+          <div id="canvasContainer">
+            <canvas id="treeCanvas"></canvas>
+            <output id="canvasCounterField" placeholder="0/2000000"></output>
+          </div>
+        </div>
+    </div>
       <div class="container container--color">
         <h1>About</h1>
         <a href="aboutAmazonas.html" data-part="aboutAmazonas.part">Amazonas</a>
         <a href="aboutSeeClearly.html" data-part="aboutSeeClearly.part">See Clearly</a>
         <a href="aboutIsakMSilva.html" data-part="aboutIsakMSilva">Isak M Silva</a>
+        <br>
         <p>
           Lorem ipsum dolor sit amet, his erat dignissim ea, id oratio nostrum
           vel, invenire salutatus conceptam duo id. Mel no petentium torquatos,
@@ -30,5 +43,6 @@
     </main>
   </div>
   <script src="./script.js"></script>
+  <script src="js/treeCounter.js"></script>
 </body>
 </html>
