@@ -3,10 +3,6 @@
     <div>
       <img src="./img/general/logo.png" alt="Logo" width="300"/>
     </div>
-    <div id="searchForm">
-      <input type="text" placeholder="Find your spectacles"/>
-      <button class="button">Search</button>
-    </div>
   </div>
   <div id="navbar">
     <ul>

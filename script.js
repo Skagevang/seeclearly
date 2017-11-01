@@ -21,12 +21,6 @@ const colorRightNavLink = () => {
       anchor.style.backgroundColor = 'green';
       anchor.style.color = 'white';
     }
-    else if (window.location.href.indexOf('about') !== -1) {
-      if (anchor.href.indexOf('about.html') !== -1) {
-        anchor.style.backgroundColor = 'green';
-        anchor.style.color = 'white';
-      }
-    }
   }
 }
 
