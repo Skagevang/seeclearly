@@ -510,7 +510,7 @@ textarea {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
+  margin-top: 20px;
   height: 300px;
   overflow: hidden;
 }
@@ -604,9 +604,9 @@ textarea {
  */
 
 #treeCounterContainer{
-  text-align: center;
-  margin: auto;
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #canvasCounterField{
@@ -617,19 +617,15 @@ textarea {
 }
 
 #canvasContainer{
+  margin-top: 12px;
   width: 60%;
   height: 40px;
-  float: right;
-  display: block;
   border: 10px;
   overflow: visible;
+  text-align: center;
 }
+
 #treeCanvas{
   width:100%;
   height: 40px;
 }
-
-#counterBanner{
-  font-size: 28px;
-  font-weight: bold;
-)

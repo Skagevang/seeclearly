@@ -9,59 +9,51 @@
 </head>
 <body>
   <div class="wrapper">
-    <!--  The following div contains the treeCounter module that javascript
-      feature 5 works on, named: A visual represntation of how many trees that
-      have been saved -->
     <div class="container">
+      <!--  The following div contains the treeCounter module that javascript
+        feature 5 works on, named: A visual represntation of how many trees that
+        have been saved -->
       <div id="treeCounterContainer">
-        <span id="counterBanner">Help us reach our goal:</span>
+        <h2>Help us reach our goal:</h2>
         <div id="canvasContainer">
           <canvas id="treeCanvas"></canvas>
           <output id="canvasCounterField" placeholder="0/2000000"></output>
         </div>
       </div>
-    </div>
-    <!-- Code for slideshow is taken from
-          https://www.w3schools.com/howto/howto_js_slideshow.asp
-          and only modified slightly to suit our needs and preferences.
-     -->
-    <div class="container container--color">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/general/slideshow1.jpg" style="width:100%">
-            <div class="text"></div><!-- CAPTION TEXT HERE, REMOVE THIS CSS AND MAYBE JS IF NOT USED||||||||||||||||||||||||||||||||-->
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/general/slideshow2.jpg" style="width:100%">
-            <div class="text"></div><!-- CAPTION TEXT HERE, REMOVE THIS CSS AND MAYBE JS IF NOT USED||||||||||||||||||||||||||||||||-->
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/general/slideshow3.jpg" style="width:100%">
-            <div class="text"></div><!-- CAPTION TEXT HERE, REMOVE THIS CSS AND MAYBE JS IF NOT USED||||||||||||||||||||||||||||||||-->
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+      <!-- Code for slideshow is taken from
+            https://www.w3schools.com/howto/howto_js_slideshow.asp
+            and only modified slightly to suit our needs and preferences.
+       -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/general/slideshow1.jpg" style="width:100%">
+          <div class="text"></div><!-- CAPTION TEXT HERE, REMOVE THIS CSS AND MAYBE JS IF NOT USED||||||||||||||||||||||||||||||||-->
         </div>
 
-      <h1>SeeClearly</h1>
-      <p>
-        Lorem ipsum dolor sit amet, his erat dignissim ea, id oratio nostrum vel, invenire salutatus conceptam duo id. Mel no petentium torquatos, has laoreet detracto ex. Cu mea quot salutandi. Id animal molestie scripserit his, per te nulla qualisque instructior, soleat oportere vix ne.
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/general/slideshow2.jpg" style="width:100%">
+          <div class="text"></div><!-- CAPTION TEXT HERE, REMOVE THIS CSS AND MAYBE JS IF NOT USED||||||||||||||||||||||||||||||||-->
+        </div>
 
-  Te eum soluta scripta, eam illum prompta gloriatur ei. Simul virtute has ea, cu quis ornatus recteque mel. Magna voluptaria percipitur mei eu, ne sed liber inciderint, no feugiat urbanitas sadipscing cum. Ex dolorem albucius torquatos cum, ad qui lorem efficiantur.
-      </p>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/general/slideshow3.jpg" style="width:100%">
+          <div class="text"></div><!-- CAPTION TEXT HERE, REMOVE THIS CSS AND MAYBE JS IF NOT USED||||||||||||||||||||||||||||||||-->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
     </div>
   </div>
   <script src="js/slideshow.js"></script>
