@@ -285,7 +285,6 @@ FAQ page
 
 .faq-button {
   display: block;
-  max-width: 600px;
   width: 100%;
   border-style: none;
   color: white;
@@ -313,7 +312,7 @@ FAQ page
 .answer-div {
   color: white;
   background-color: rgb(96, 51, 9);
-  max-width: 760px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 5px 20px;
   display: none;
