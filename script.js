@@ -25,12 +25,19 @@ const colorRightNavLink = () => {
 }
 
 getData('header.part', function(resp){
-  var wrapper = document.querySelector(".wrapper");
-  wrapper.innerHTML = resp.response + wrapper.innerHTML; // Prepend header
+  var wrapper, header;
+  wrapper = document.querySelector(".wrapper");
+  header = document.createElement("header");
+  header.innerHTML = resp.response;
+  wrapper.insertBefore(header, wrapper.children[0]); // Preprend header
+  console.log("Inserting",header, "Before", wrapper.children[0]);
   colorRightNavLink();
 });
 
 getData('footer.part', function(resp){
-  var wrapper = document.querySelector(".wrapper");
-  wrapper.parentNode.innerHTML += resp.response;
+  var wrapper, footer;
+  wrapper = document.querySelector(".wrapper");
+  footer = document.createElement("footer");
+  footer.innerHTML = resp.response;
+  wrapper.parentNode.appendChild(footer);
 })
