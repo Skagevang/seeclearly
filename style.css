@@ -134,6 +134,7 @@ a img {
   width: 33%;
   width: calc((100% / 3) - 15px);
 }
+
 .grid__element{
   margin-bottom: 20px;
 }
@@ -181,7 +182,22 @@ a img {
   transition: .4s ease-in-out all;
 }
 .products:hover .products__extra{
-  max-height: 250px;
+  max-height: 300px;
+}
+/*
+ * Fixing scaling issues with products page
+ */
+@media (max-width: 960px){
+  .grid{
+    flex-wrap: wrap;
+  }
+  .grid__column{
+    width: 100%;
+  }
+  .grid__element{
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
 }
 
 /*
