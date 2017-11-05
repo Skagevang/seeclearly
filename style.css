@@ -561,17 +561,6 @@ textarea {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -645,4 +634,30 @@ textarea {
 #treeCanvas{
   width:100%;
   height: 40px;
+}
+
+/* 
+Index/home page 
+*/
+
+#flex-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-div {
+  background: rgb(135, 80, 29);
+  width: 100%;
+  color: white;
+  padding: 10px;
+
+}
+
+.margin-left {
+  margin-left: 8px;
+}
+
+.margin-right {
+  margin-right: 8px;
 }
