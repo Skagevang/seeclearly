@@ -56,4 +56,3 @@ function updateCounter(){
 drawBars(current/goal); //these are drawn only once, not scaling with the counter
 updateCounter(); //initial showing of the counter
 setInterval(updateCounter,2000); //updates the counter every 2 seconds
-

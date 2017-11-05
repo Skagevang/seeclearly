@@ -1,10 +1,9 @@
-html, body {
+html,
+body {
   background-color: #e9be77;
   background-image: url("./img/general/bg-wood.png");
   margin: 0;
   padding: 0;
-}
-body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,11 +15,11 @@ body{
   font-family: arial;
 }
 
-/* HEADER */
+/* Header */
 #logoSearch {
   width: 962px;
   max-width: 90%;
-  margin: 20px auto !important; /* TODO: Remove !important*/
+  margin: 20px auto;
   box-sizing: border-box;
 }
 
@@ -28,54 +27,62 @@ ul {
   list-style-type: none;
   margin: 10px 0;
   padding: 0;
-  overflow: hidden;
-  width: 100%;
-  background-color: rgb(135, 80, 29);
   width: 962px;
   max-width: 90%;
-  margin: 20px auto !important; /* TODO: Remove !important*/
+  margin: 20px auto;
   box-sizing: border-box;
+  background-color: rgb(135, 80, 29);
+  overflow: hidden;
 }
 
-li a, .dropbtn {
+.floating {
   float: left;
+}
+
+li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 25px;
+  padding: 10px 40px;
   text-decoration: none;
 }
 
-li a:hover, .dropdown-content a:hover {
+#noneAbout {
+  cursor: default;
+}
+
+#noneAbout:hover {
+  background-color: rgb(135, 80, 29);
+}
+
+#noneAbout:active {
+  background-color: rgb(135, 80, 29);
+}
+
+.abouts {
+  padding: 10px 18px;
+}
+
+li a:hover {
   background-color: rgb(125, 98, 63);
 }
 
-li a:active, .dropdown-content a:active {
+li a:active {
   background-color: green;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  left: 120px;
-  top: 240px;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
   color: white;
   background-color: rgb(135, 80, 29);
-  z-index: 1;
-  border-color: sienna;
-  border-style: solid;
-  border-width: 3px;
+  position: absolute;
 }
 
-.dropdown-content a {
-  display: block;
-  float: none;
-}
-
+/* Footer */
 footer {
   bottom: 0;
   width: 100%;
@@ -105,52 +112,58 @@ a img {
   margin-right: 10px;
 }
 
-  /*
-  * products page
-  */
-.container{
+/* Products page */
+.container {
   width: 962px;
   max-width: 90%;
-  margin: 20px auto !important; /* TODO: Remove !important*/
+  margin: 20px auto;
   box-sizing: border-box;
   overflow: auto;
 }
-.container--color{
+
+.container--color {
   background: rgb(135, 80, 29);
   padding: 20px;
   color: #fff;
 }
-.container--bg img{
+
+.container--bg img {
   width: 100%;
   height: auto;
 }
-.grid{
+
+.grid {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
 }
-.grid__column{
+
+.grid__column {
   width: 33%;
   width: calc((100% / 3) - 15px);
 }
 
-.grid__element{
+.grid__element {
   margin-bottom: 20px;
 }
-.double{
+
+.double {
   font-size: 0;
 }
-.double__one{
+
+.double__one {
   display: inline-block;
   width: 50%;
   vertical-align: middle;
   font-size: 18px;
 }
-.double__one--right{
+
+.double__one--right {
   text-align: right;
 }
-.button{
+
+.button {
   background: green;
   color: #fff;
   display: inline-block;
@@ -162,84 +175,93 @@ a img {
   transition: .2s all ease-in-out;
   cursor: pointer;
 }
-.button:hover, .button:focus{
+
+.button:hover,
+.button:focus {
   color: green;
   background: #fff;
 }
-.products{
+
+.products {
   background: #925b1f;
   padding: 20px;
   box-sizing: border-box;
   color: #fff;
 }
-.products__image{
+
+.products__image {
   width: 100%;
   height: auto;
 }
-.products__extra{
+
+.products__extra {
   max-height: 0;
   overflow-y: hidden;
   transition: .4s ease-in-out all;
 }
+
 .products:hover .products__extra{
   max-height: 300px;
 }
-/*
- * Fixing scaling issues with products page
- */
+
 @media (max-width: 960px){
-  .grid{
+  .grid {
     flex-wrap: wrap;
   }
-  .grid__column{
+
+  .grid__column {
     width: 100%;
   }
-  .grid__element{
+
+  .grid__element {
     max-width: 400px;
     margin: 0 auto 20px;
   }
 }
 
-/*
- * Product page
- */
-.sidebarcontent{
+/* Product page */
+.sidebarcontent {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.sidebarcontent__main{
+
+.sidebarcontent__main {
   width: 70%;
   padding-right: 20px;
   box-sizing: border-box;
 }
-.sidebarcontent__sidebar{
+
+.sidebarcontent__sidebar {
   width: 30%;
 }
-.sidebarcontent__sidebar img{
+
+.sidebarcontent__sidebar img {
   max-width: 100%;
   height: auto;
 }
-.form{
 
-}
-.form__header{
+.form__header {
   font-size: 24px;
   font-weight: 600;
 }
-.form__group{
+
+.form__group {
   font-size: 0;
   margin-bottom: 10px;
 }
-.form__group--right{
+
+.form__group--right {
   text-align: right;
 }
-.form__group label{
+
+.form__group label {
   font-size: 18px;
   width: 50%;
   display: inline-block;
 }
-.form__group select{
+
+.form__group select {
   width: 50%;
   font-size: 16px;
   line-height: 22px;
@@ -248,48 +270,49 @@ a img {
   border: 1px solid #aeaeae;
 }
 
-/*
- * Order page
- */
-.table{
+/* Order page */
+.table {
   width: 100%;
   padding: 0;
   border-collapse: collapse;
 }
-.table td,
-.table th{
+
+.table td, .table th {
   border: 1px solid #f8aa6a;
   color: #fff;
   vertical-align: middle;
   font-size: 18px;
   padding: 10px;
 }
-.table img{
+
+.table img {
   max-width: 90px;
   height: auto;
   margin: auto;
   display: block;
 }
-.table td:nth-child(2){
+
+.table td:nth-child(2) {
   font-size: 22px;
 }
-.table td:nth-child(n + 4){
+
+.table td:nth-child(n + 4) {
   text-align: center;
 }
-.table tfoot td:last-child{
+
+.table tfoot td:last-child {
   text-align: center;
 }
-.table tfoot td:nth-child(2){
+
+.table tfoot td:nth-child(2) {
   font-size: 18px;
 }
-.table .table__invisible{
+
+.table .table__invisible {
   border: none;
 }
 
-/*
-FAQ page
-*/
-
+/* FAQ page */
 .faq-button {
   display: block;
   width: 100%;
@@ -303,6 +326,7 @@ FAQ page
   font-size: 16px;
   text-align: left;
 }
+
 .faq-button:hover {
   cursor: pointer;
   background-color: rgb(125, 98, 63);
@@ -334,9 +358,7 @@ FAQ page
   float: right;
 }
 
-/*
-Checkout page
-*/
+/* Checkout page */
 #checkout {
   border-collapse: collapse;
   width: 100%;
@@ -344,9 +366,9 @@ Checkout page
 }
 
 #checkout td, th {
-    border: 1px solid #c68c53;
-    text-align: left;
-    padding: 8px;
+  border: 1px solid #c68c53;
+  text-align: left;
+  padding: 8px;
 }
 
 #checkout td:empty {
@@ -371,76 +393,76 @@ Checkout page
   width: 100px;
 }
 
-/*
-Thank You Page
-*/
+/* Thank You Page */
 #thanks {
   float: right;
   margin: 20px;
   width: 400px;
 }
 
- * About Pages
- */
-
-.quote{
-    font-style: italic;
-    font-size: 20px;
+/* About Pages */
+.quote {
+  font-style: italic;
+  font-size: 20px;
 }
+
 .author {
-    padding: 10px;
+  padding: 10px;
 }
 
 .about_image_cover{
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    margin: 20px;
-    float: right
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  margin: 20px;
+  float: right
 }
 
 .about_image_smaller{
-    max-width: 200px;
-    max-height: 200px;
-    background-size: cover;
-    margin: 20px;
-    float: left;
+  max-width: 200px;
+  max-height: 200px;
+  background-size: cover;
+  margin: 20px;
+  float: left;
 }
 
-
-
-
-
-.orderform{
+/* Checkout Page */
+.orderform {
   margin-top: 40px;
 }
-.orderform::after{
+
+.orderform::after {
   content: "";
   display: block;
   clear: both;
 }
+
 .orderform__left,
-.orderform__right{
+.orderform__right {
   width: 50%;
   box-sizing: border-box;
   float: left;
 }
-.orderform__right{
+
+.orderform__right {
   padding-left: 10px;
 }
-.orderform__left{
+
+.orderform__left {
   padding-right: 10px;
 }
-.orderform label{
+
+.orderform label {
   width: 100%;
   display: block;
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 22px;
 }
+
 .orderform input[type="text"],
 .orderform input[type="email"],
-.orderform input[type="number"]{
+.orderform input[type="number"] {
   width: 100%;
   font-size: 16px;
   line-height: 22px;
@@ -450,56 +472,63 @@ Thank You Page
   background: #d3d2d3;
   border: 1px solid #aeaeae;
 }
-.orderform input.invalid{
+
+.orderform input.invalid {
   border-color: red;
   border-width: 2px;
 }
-.orderform input.valid{
+
+.orderform input.valid {
   border-color: green;
   border-width: 2px;
 }
-.labelwrapper{
 
-}
-.labelwrapper::after{
+.labelwrapper::after {
   content: "";
   display: block;
   clear: both;
 }
-.labelwrapper .half_label{
+
+.labelwrapper .half_label {
   width: 50%;
   float: left;
   box-sizing: border-box;
 }
-.labelwrapper .half_label:nth-child(2n){
+
+.labelwrapper .half_label:nth-child(2n) {
   padding-left: 10px;
 }
-.labelwrapper .half_label:nth-child(2n+1){
+
+.labelwrapper .half_label:nth-child(2n+1) {
   padding-right: 10px;
 }
-.labelwrapper .half_label input{
+
+.labelwrapper .half_label input {
   max-width: 100%;
 }
-.orderform__bottom{
+
+.orderform__bottom {
   text-align: right;
 }
 
-/*
-* Contact Page
-*/
-
-textarea {
+/* Contact Page */
+#textareaPadding {
   width: 350px;
   height: 250px;
   resize: none;
+  padding: 15px;
+  font-size: 20px;
+  font-family: cursive;
 }
 
-#marginDonate {
+#donateButton {
+  text-align: center;
   margin: 50px 50px 0 0;
 }
 
-.center {
+#sendButton {
   text-align: center;
+  margin: 20px 0;
 }
 
 #marginTop {
@@ -532,11 +561,12 @@ textarea {
 }
 
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -557,7 +587,8 @@ textarea {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -573,21 +604,15 @@ textarea {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -600,17 +625,14 @@ textarea {
   width: 100%;
 }
 
-/*
- * Tree Counter Feature On The Homepage
- */
-
-#treeCounterContainer{
+/* Tree Counter Feature On The Homepage */
+#treeCounterContainer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#canvasCounterField{
+#canvasCounterField {
   position: relative;
   text-align: center;
   top: -32px;
@@ -618,7 +640,7 @@ textarea {
   font-size: 20px;
 }
 
-#canvasContainer{
+#canvasContainer {
   margin-top: 12px;
   width: 60%;
   height: 40px;
@@ -627,15 +649,12 @@ textarea {
   text-align: center;
 }
 
-#treeCanvas{
+#treeCanvas {
   width:100%;
   height: 40px;
 }
 
-/* 
-Index/home page 
-*/
-
+/* Index/home page */
 #flex-container {
   margin-top: 10px;
   display: flex;

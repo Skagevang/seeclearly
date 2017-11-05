@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!---
-  FILE NAME: contact.html
-  WRITTEN BY: Ole-Martin Skagevang
-  WHEN: 18. October 2017
-  PURPOSE: Donate money, contact us by mail and see location
- -->
+FILE NAME: contact.html
+WRITTEN BY: Ole-Martin Skagevang
+WHEN: 18. October 2017
+PURPOSE: Donate money, contact us by mail and see location
+-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -20,19 +20,19 @@
           <h2>Contact us</h2>
           <u>Address:</u><br/>NV-fakultetet,<br/>Høgskoleringen 5,<br/>7491 Trondheim<br/><br/>Phone: 123 456 789<br/>E-mail: info@seeclearly.com
         </div>
-        <div id="marginDonate" class="center">
+        <div id="donateButton">
           <button class="button" onclick="location.href = './thankYou.html'">Donate</button>
           <p>Every time you push this button,<br />you donate money to save a tree</p>
         </div>
       </div>
-      <div id="marginTop" class="flexSpace">
+      <div id="marginTop" class="flexSpace grid">
         <form action="mailto:info@seeclearly.com" method="post" enctype="text/plain">
-          <textarea name="textarea" placeholder="Leave a message" autofocus required></textarea>
-          <div class="center">
+          <textarea id="textareaPadding" name="textarea" placeholder="Leave a message" autofocus required></textarea>
+          <div id="sendButton">
             <input type="submit" class="button" value="Send"/>
           </div>
         </form>
-        <iframe width="350" height="258" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBNvK43gDf8Fod2DM2qy0idlJZpKDJ5cDY&q=Høgskoleringen5,Trondheim+Norway" allowfullscreen></iframe>
+        <iframe width="350" height="250" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBNvK43gDf8Fod2DM2qy0idlJZpKDJ5cDY&q=Høgskoleringen5,Trondheim+Norway" allowfullscreen></iframe>
       </div>
     </div>
   </div>

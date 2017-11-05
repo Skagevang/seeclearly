@@ -1,7 +1,7 @@
 //Code for the slideshow on the home page
 
 /*
-* Code for slideshow is taken from  
+* Code for slideshow is taken from
 * https://www.w3schools.com/howto/howto_js_slideshow.asp
 * and only modified slightly to suit our needs and preferences.
 */
@@ -21,14 +21,14 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block"; 
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
