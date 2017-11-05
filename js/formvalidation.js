@@ -20,7 +20,7 @@
      * Validate text input field
      */
     function validateTextInput(element){
-      var regex = /^[a-zæøå0-9-_ ]+$/i; 
+      var regex = /^[a-zæøå0-9-_ ]+$/i;
       // Regex that allows a - z, æøå, 0-9, _ and - (uppercase and lowercase)
       return validateInputElementWithRegex(element, regex);
     }
@@ -29,7 +29,7 @@
      */
     function validateEmailInput(element){
       var regex = /^[a-zæøå0-9-_.+%]+[@][a-zæøå0-9-_.+%]+[.][a-zæøå0-9-_.+%]+$/i
-      // Alphanumeric letters and "_, -, ., +, %" followed by "@", 
+      // Alphanumeric letters and "_, -, ., +, %" followed by "@",
       //followed by same characters followed by "."" followed by same type
       return validateInputElementWithRegex(element, regex);
     }
@@ -80,7 +80,7 @@
           }
         }
       }
-        
+
       if(!validForm){
         // Form not valid
         event.preventDefault();

@@ -3,19 +3,19 @@
       <img src="./img/general/logo.png" alt="Logo" width="300"/>
     </div>
   </div>
-  <div id="navbar">
+  <div>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">About</a>
+      <li class="floating"><a href="index.html">Home</a></li>
+      <li class="dropdown floating">
+        <a id="noneAbout" href="javascript:void(0)">About</a>
         <div class="dropdown-content">
-          <a href="aboutAmazonas.html">Amazonas</a>
-          <a href="aboutIsakMSilva.html">Isak M Silva</a>
-          <a href="aboutSeeClearly.html">SeeClearly</a>
+          <a class="abouts" href="aboutAmazonas.html">Amazonas</a>
+          <a class="abouts" href="aboutIsakMSilva.html">Isak M Silva</a>
+          <a class="abouts" href="aboutSeeClearly.html">SeeClearly</a>
         </div>
       </li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="faq.html">FAQ</a></li>
+      <li class="floating"><a href="products.html">Products</a></li>
+      <li class="floating"><a href="contact.html">Contact</a></li>
+      <li class="floating"><a href="faq.html">FAQ</a></li>
     </ul>
   </div>
