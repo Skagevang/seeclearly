@@ -527,7 +527,7 @@ textarea {
 .slideshow-container {
   position: relative;
   margin-top: 20px;
-  height: 325px;
+  max-height: 325px;
   overflow: hidden;
 }
 
@@ -593,6 +593,11 @@ textarea {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Pictures */
+.slideshow-pic {
+  width: 100%;
 }
 
 /*
