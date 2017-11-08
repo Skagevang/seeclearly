@@ -1,6 +1,6 @@
-/*
-FILE NAME: formvalidation.js
-WRITTEN BY: Jørgen Juel
+  /*
+FILE NAME: form.js
+WRITTEN BY: Ole-Martin
 WHEN: October 2017
 PURPOSE: Validates form input if orderform element is present
 */

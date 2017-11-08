@@ -1,5 +1,5 @@
 /*
-FILE NAME: treeCounter.js
+FILE NAME: treecounter.js
 WRITTEN BY: Mikkel Svagaard
 WHEN: October 2017
 PURPOSE: Generates counter on front page to illustrate number of trees saved

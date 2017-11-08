@@ -1,5 +1,5 @@
 /*
-FILE NAME: slideshow.js
+FILE NAME: carousel.js
 WRITTEN BY: Sigurd Aasbrenn
 WHEN: October 2017
 PURPOSE: make frontpage slideshow functional (slideshow code)
