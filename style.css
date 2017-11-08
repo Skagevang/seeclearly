@@ -147,18 +147,18 @@ a img {
 .grid__element {
   margin-bottom: 20px;
 }
-
+/* .double is a two-column wrapper */
 .double {
   font-size: 0;
 }
-
+/* .double__one is one of the columns inside the two column wrapper .double */
 .double__one {
   display: inline-block;
   width: 50%;
   vertical-align: middle;
   font-size: 18px;
 }
-
+/* Right column (last one) shoudl be align to the right */
 .double__one--right {
   text-align: right;
 }
@@ -204,6 +204,7 @@ a img {
   max-height: 300px;
 }
 
+/* Making flexgrid work on mobile */
 @media (max-width: 960px){
   .grid {
     flex-wrap: wrap;
