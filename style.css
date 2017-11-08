@@ -1,3 +1,4 @@
+/* Main */
 html,
 body {
   background-color: #e9be77;
@@ -204,11 +205,11 @@ footer img {
   transition: .4s ease-in-out all;
 }
 
-.products:hover .products__extra{
+.products:hover .products__extra {
   max-height: 300px;
 }
 
-@media (max-width: 960px){
+@media (max-width: 960px) {
   .grid {
     flex-wrap: wrap;
   }
