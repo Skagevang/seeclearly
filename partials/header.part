@@ -1,21 +1,28 @@
+<!--
+FILE NAME: header.part
+WRITTEN BY: Ole-Martin Skagevang
+WHEN: 12. October 2017
+PURPOSE: Header with logo and navbar for all pages
+-->
   <div id="logoSearch">
     <div>
       <img src="./img/general/logo.png" alt="Logo" width="300"/>
     </div>
   </div>
   <div>
-    <ul>
-      <li class="floating"><a href="index.html">Home</a></li>
+    <!--Navbar with a list of links to different sites-->
+    <ul id="navBar">
+      <li class="floating"><a class="navLink" href="index.html">Home</a></li>
       <li class="dropdown floating">
-        <a id="noneAbout" href="javascript:void(0)">About</a>
+        <a id="noneAbout" class="navLink" href="javascript:void(0)">About</a>
         <div class="dropdown-content">
-          <a class="abouts" href="aboutAmazonas.html">Amazonas</a>
-          <a class="abouts" href="aboutIsakMSilva.html">Isak M Silva</a>
-          <a class="abouts" href="aboutSeeClearly.html">SeeClearly</a>
+          <a class="abouts navLink" href="aboutAmazonas.html">Amazonas</a>
+          <a class="abouts navLink" href="aboutIsakMSilva.html">Isak M Silva</a>
+          <a class="abouts navLink" href="aboutSeeClearly.html">SeeClearly</a>
         </div>
       </li>
-      <li class="floating"><a href="products.html">Products</a></li>
-      <li class="floating"><a href="contact.html">Contact</a></li>
-      <li class="floating"><a href="faq.html">FAQ</a></li>
+      <li class="floating"><a class="navLink" href="products.html">Products</a></li>
+      <li class="floating"><a class="navLink" href="contact.html">Contact</a></li>
+      <li class="floating"><a class="navLink" href="faq.html">FAQ</a></li>
     </ul>
   </div>
