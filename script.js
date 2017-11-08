@@ -6,9 +6,6 @@ function getData(url, cb){
       if (request.status >= 200 && request.status < 400) {
           // Success
           cb(request);
-      } else {
-          // Handle error
-          console.log("Unable to load request " + request.status + " - " + request.statusText);
       }
   }
   request.send();
@@ -30,7 +27,6 @@ getData('header.part', function(resp){
   header = document.createElement("header");
   header.innerHTML = resp.response;
   wrapper.insertBefore(header, wrapper.children[0]); // Preprend header
-  console.log("Inserting",header, "Before", wrapper.children[0]);
   colorRightNavLink();
 });
 
