@@ -31,12 +31,12 @@ function getData(url, cb){
  * @params: void
  * @return: void
  */
-const colorRightNavLink = () => {
-  const anchors = [...document.querySelectorAll("a")];
-  for (let anchor of anchors) {
-    if (anchor.href === window.location.href) {
-      anchor.style.backgroundColor = 'green';
-      anchor.style.color = 'white';
+function colorRightNavLink(){
+  var anchors = document.querySelectorAll("a");
+  for (var i = 0; i < anchors.length; i++) {
+    if (anchors[i].href === window.location.href) {
+      anchors[i].style.backgroundColor = 'green';
+      anchors[i].style.color = 'white';
     }
   }
 }
