@@ -180,6 +180,7 @@ footer img {
   text-decoration: none;
   transition: .2s all ease-in-out;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .button:hover,
