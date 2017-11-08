@@ -15,6 +15,8 @@ PURPOSE: Common function for all pages - ajax for retrieving header and footer
 function getData(url, cb){
   var request = new XMLHttpRequest();
   request.open('GET', "partials/"+url, true);
+  request.responseType = "text";
+  
   request.onload = function () {
       if (request.status >= 200 && request.status < 400) {
           // Success
