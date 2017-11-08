@@ -21,17 +21,20 @@ PURPOSE: Donate money, contact us by mail and see location
           <u>Address:</u><br/>NV-fakultetet,<br/>Høgskoleringen 5,<br/>7491 Trondheim<br/><br/>Phone: 123 456 789<br/>E-mail: info@seeclearly.com
         </div>
         <div id="donateButton">
+          <!--Button that sends you to the thankYouPage-->
           <button class="button" onclick="location.href = './thankYou.html'">Donate</button>
           <p>Every time you push this button,<br />you donate money to save a tree</p>
         </div>
       </div>
       <div id="marginTop" class="flexSpace grid">
+        <!--Form to send message to the firm. action takes you to the default mail on your device-->
         <form action="mailto:info@seeclearly.com" method="post" enctype="text/plain">
           <textarea id="textareaPadding" name="textarea" placeholder="Leave a message" autofocus required></textarea>
           <div id="sendButton">
             <input type="submit" class="button" value="Send"/>
           </div>
         </form>
+        <!--Google Map. src is from their API-->
         <iframe width="350" height="250" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBNvK43gDf8Fod2DM2qy0idlJZpKDJ5cDY&q=Høgskoleringen5,Trondheim+Norway" allowfullscreen></iframe>
       </div>
     </div>

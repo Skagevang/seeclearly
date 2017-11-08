@@ -23,7 +23,7 @@ body {
   box-sizing: border-box;
 }
 
-ul {
+#navBar {
   list-style-type: none;
   margin: 10px 0;
   padding: 0;
@@ -39,7 +39,7 @@ ul {
   float: left;
 }
 
-li a {
+.navLink {
   display: block;
   color: white;
   text-align: center;
@@ -63,11 +63,11 @@ li a {
   padding: 10px 18px;
 }
 
-li a:hover {
+.navLink:hover {
   background-color: rgb(125, 98, 63);
 }
 
-li a:active {
+.navLink:active {
   background-color: green;
 }
 
@@ -80,6 +80,10 @@ li a:active {
   color: white;
   background-color: rgb(135, 80, 29);
   position: absolute;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  box-shadow: 0px 5px 6px #888888;
 }
 
 /* Footer */
@@ -107,7 +111,7 @@ footer img {
   width: 40px;
 }
 
-a img {
+.socialPic {
   margin-top: 10px;
   margin-right: 10px;
 }
@@ -550,12 +554,10 @@ a img {
 * and only modified slightly to suit our needs and preferences.
 */
 
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
   max-height: 325px;
   overflow: hidden;
 }
