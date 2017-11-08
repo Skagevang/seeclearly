@@ -1,4 +1,12 @@
 /*
+FILE NAME: script.js
+WRITTEN BY: Ole-Martin Skagevang and Jørgen Juel
+WHEN: October 2017
+PURPOSE: Common function for all pages - ajax for retrieving header and footer
+         and coloring function for navigation menu
+*/
+
+/*
  * Function to simplify XML  Http request
  * Performs cb function on success
  * @params: String url, function cb

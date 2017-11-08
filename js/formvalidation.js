@@ -1,3 +1,9 @@
+/*
+FILE NAME: formvalidation.js
+WRITTEN BY: Jørgen Juel
+WHEN: October 2017
+PURPOSE: Validates form input if orderform element is present
+*/
 (function () {
   var orderform = document.querySelector(".orderform");
   if(orderform && orderform !== null){
