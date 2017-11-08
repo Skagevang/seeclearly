@@ -14,6 +14,7 @@ body {
   flex: 1 0 auto;
   position: relative;
   font-family: arial;
+  font-size: 16px;
 }
 
 /* Header */
@@ -352,6 +353,7 @@ footer img {
   margin: 0 auto;
   padding: 5px 20px;
   display: none;
+  box-sizing: border-box;
 }
 
 #question {
