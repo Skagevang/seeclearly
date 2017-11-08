@@ -1,4 +1,10 @@
-//Code for the slideshow on the home page
+/*
+FILE NAME: slideshow.js
+WRITTEN BY: Sigurd Aasbrenn
+WHEN: October 2017
+PURPOSE: make frontpage slideshow functional (slideshow code)
+*/
+
 
 /*
 * Code for slideshow is taken from
