@@ -14,70 +14,70 @@ PURPOSE: Showcase a selected pair and give an opportunity to order
 </head>
 <body>
   <div class="wrapper">
-    <main class="main">
-      <div class="container container--bg">
-        <img src="img/products/banner.png" alt="A woman with glasses reading a book">
-      </div>
-      <div id="content" class="container container--color">
-        <div class="sidebarcontent">
-          <div class="sidebarcontent__main">
-            <h1>Woodland Classic NorthWest</h1>
-            <p>
-              A limited-edition collaoboration by two seriously cool British
-              brands, these shades from Sunspel and Cubitts have that classic,
-              throwback Gatsby style (we're big fans of that classic Thirties
-              keyhole detail on the bridge). Each pair comes with an exclusive,
-              made-in-England Sunspel-branded wood case and a cotton pouch
-              crafted from Sunspels signature cotton jersey, as well as a lens
-              cleaning cloth, printed with a scenescape of Kings Cross
-              illustrated by Lucy Dalzel.
-            </p>
-            <p>
-              These stylish blue shades with a rectangular, plastic frames might
-              look simple from the front, but the bright red and blue contrast
-              temples - complete with SeeClearly's signature bee - make these one of
-              the coolest pairs of sunglasses this season. Perfect with a white
-              shirt, shorts and a pair of breezy Rivieras on the beach.
-            </p>
-          </div>
-          <aside class="sidebarcontent__sidebar">
-            <img src="img/products/glass.png" alt="A pair of glasses">
-            <form action="checkout.html" class="form" method="post">
-              <h3 class="form__header">Options</h3>
-              <div class="form__group">
-                <label for="size">Size:</label>
-                <select id="size" name="size">
-                  <option>Small</option>
-                  <option>Medium</option>
-                  <option>Large</option>
-                </select>
-              </div>
-              <div class="form__group">
-                <label for="prescription">Prescription:</label>
-                <select id="prescription" name="prescription">
-                  <option>-2</option>
-                  <option>-1</option>
-                  <option>1</option>
-                  <option>2</option>
-                </select>
-              </div>
-              <div class="form__group">
-                <label for="color">Color:</label>
-                <select id="color" name="color">
-                  <option>Light Wood</option>
-                  <option>Dark Wood</option>
-                  <option>Green Wood</option>
-                  <option>Black Wood</option>
-                </select>
-              </div>
-              <div class="form__group form__group--right">
-                <input type="submit" value="Buy now" class="button">
-              </div>
-            </form>
-          </aside>
+    <div class="container container--bg">
+      <img src="img/products/banner.png" alt="A woman with glasses reading a book">
+    </div>
+    <div id="content" class="container container--color">
+      <div class="sidebarcontent">
+        <div class="sidebarcontent__main">
+          <h1>Woodland Classic NorthWest</h1>
+          <p>
+            A limited-edition collaoboration by two seriously cool British
+            brands, these shades from Sunspel and Cubitts have that classic,
+            throwback Gatsby style (we're big fans of that classic Thirties
+            keyhole detail on the bridge). Each pair comes with an exclusive,
+            made-in-England Sunspel-branded wood case and a cotton pouch
+            crafted from Sunspels signature cotton jersey, as well as a lens
+            cleaning cloth, printed with a scenescape of Kings Cross
+            illustrated by Lucy Dalzel.
+          </p>
+          <p>
+            These stylish blue shades with a rectangular, plastic frames might
+            look simple from the front, but the bright red and blue contrast
+            temples - complete with SeeClearly's signature bee - make these one of
+            the coolest pairs of sunglasses this season. Perfect with a white
+            shirt, shorts and a pair of breezy Rivieras on the beach.
+          </p>
+        </div>
+        <div class="sidebarcontent__sidebar">
+          <img src="img/products/glass.png" alt="A pair of glasses">
+          <!--Form with dropdown for choosing size, prescription and color -->
+          <form action="checkout.html" class="form" method="post">
+            <h3 class="form__header">Options</h3>
+            <div class="form__group">
+              <label for="size">Size:</label>
+              <select id="size" name="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="prescription">Prescription:</label>
+              <select id="prescription" name="prescription">
+                <option>-2</option>
+                <option>-1</option>
+                <option>-0</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="color">Color:</label>
+              <select id="color" name="color">
+                <option>Light Wood</option>
+                <option>Dark Wood</option>
+                <option>Green Wood</option>
+                <option>Black Wood</option>
+              </select>
+            </div>
+            <div class="form__group form__group--right">
+              <input type="submit" value="Buy now" class="button">
+            </div>
+          </form>
         </div>
       </div>
-    </main>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

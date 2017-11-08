@@ -1,3 +1,9 @@
+<!--
+FILE NAME: footer.part
+WRITTEN BY: Ole-Martin Skagevang
+WHEN: 12. October 2017
+PURPOSE: Footer for all pages
+-->
   <div>
     <u>Address:</u><br/>NV-fakultetet,<br/>Høgskoleringen 5,<br/>7491 Trondheim
   </div>
@@ -7,8 +13,8 @@
   <div>
     <u>Social Media:</u><br/>
     <div>
-      <a href="http://facebook.com" target="_blank"><img src="./img/footer/facebook.png" alt="Facebook"/></a>
-      <a href="http://instagram.com" target="_blank"><img src="./img/footer/instagram.png" alt="Instagram"/></a>
-      <a href="http://twitter.com" target="_blank"><img src="./img/footer/twitter.png" alt="Twitter"/></a>
+      <a class="socialPic" href="http://facebook.com" target="_blank"><img src="./img/footer/facebook.png" alt="Facebook"/></a>
+      <a class="socialPic" href="http://instagram.com" target="_blank"><img src="./img/footer/instagram.png" alt="Instagram"/></a>
+      <a class="socialPic" href="http://twitter.com" target="_blank"><img src="./img/footer/twitter.png" alt="Twitter"/></a>
     </div>
   </div>
