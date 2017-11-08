@@ -6,6 +6,14 @@ PURPOSE: Provides a function to the faq.html page to show/hide the answers to fr
 			and switches the direction of the arrow on the button based on if the answer is visible or not
 */
 
+
+/*
+ * Function to toggle visibility of element
+ * disables/enables answer_div_id element based on its current state
+ * Also adds upwards/downward arrow accordingly
+ * @params: string: button_id, string: answer_div_id
+ * @return void
+ */
 function toggle_visibility(button_id, answer_div_id) {
 	//Grabs elements by the ID provided
 	let div = document.getElementById(answer_div_id);

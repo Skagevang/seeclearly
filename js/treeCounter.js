@@ -1,9 +1,9 @@
 /*
- * Creates the dynamic figure for showing amount of trees saved
- *
- * Created by Mikkel Svagaard at 26.10.17
- *
- */
+FILE NAME: treeCounter.js
+WRITTEN BY: Mikkel Svagaard
+WHEN: October 2017
+PURPOSE: Generates counter on front page to illustrate number of trees saved
+*/
 
 
 //Setup canvas and context
@@ -50,7 +50,7 @@ function updateCounter(){
   r = new Date().getTime() % years
   current = getTree(r)
   //updates output field
-  document.getElementById("canvasCounterField").innerHTML = current  + " / " + goal + " trees";
+  document.getElementById("canvasCounterField").innerHTML = current  + " / " + goal + " Trees";
 }
 
 drawBars(current/goal); //these are drawn only once, not scaling with the counter
