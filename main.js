@@ -1,5 +1,5 @@
 /*
-FILE NAME: script.js
+FILE NAME: main.js
 WRITTEN BY: Ole-Martin Skagevang and Jørgen Juel
 WHEN: October 2017
 PURPOSE: Common function for all pages - ajax for retrieving header and footer
